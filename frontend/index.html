@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TruthTrace</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='14' cy='14' r='9' fill='none' stroke='%232563eb' stroke-width='3'/><path d='M21 21l7 7' stroke='%232563eb' stroke-width='3' stroke-linecap='round'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/app.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><circle cx="14" cy="14" r="9" fill="none" stroke="currentColor" stroke-width="3"/><path d="M21 21l7 7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M9.5 14.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><b>TruthTrace</b><small>Trace the claim. Check the evidence.</small></div>
+      </div>
+      <nav id="nav">
+        <div class="nav-group">Verification</div>
+        <a href="#/verify" data-page="verify">News Intelligence Dashboard</a>
+        <a href="#/compare" data-page="compare">Cross-Source Comparison</a>
+        <a href="#/meaning" data-page="meaning">Meaning &amp; Translation</a>
+        <a href="#/evolution" data-page="evolution">Claim Evolution</a>
+        <a href="#/media" data-page="media">Media Check</a>
+        <div class="nav-group">Dashboards</div>
+        <a href="#/perspectives" data-page="perspectives">Perspectives</a>
+        <a href="#/opinion" data-page="opinion">Public Opinion</a>
+        <a href="#/influencers" data-page="influencers">Influential People</a>
+        <div class="nav-group">System</div>
+        <a href="#/history" data-page="history">History &amp; Claim Memory</a>
+        <a href="#/sources" data-page="sources">Source Record &amp; Feedback</a>
+        <a href="#/accuracy" data-page="accuracy">System Accuracy</a>
+        <a href="#/method" data-page="method">Method &amp; Limits</a>
+      </nav>
+      <div class="ai-badge" id="ai-badge">Checking AI model…</div>
+    </aside>
+    <main class="main">
+      <button class="menu-btn" id="menu-btn" aria-label="Menu">☰</button>
+      <div id="page"></div>
+    </main>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
